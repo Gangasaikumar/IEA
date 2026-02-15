@@ -1,0 +1,185 @@
+import {
+  AutoMode,
+  TipsAndUpdates,
+  VerifiedUser,
+  PersonAdd,
+  AssignmentTurnedIn,
+  RateReview,
+  CheckCircle,
+  LockOpen,
+  CloudUpload,
+  Verified,
+  Engineering,
+  Assessment,
+  RocketLaunch,
+  Star,
+  Public,
+  Groups,
+  MonetizationOn,
+  Work,
+} from "@mui/icons-material";
+
+export const features = [
+  {
+    title: "AI Classification",
+    desc: "Automatic document categorization.",
+    icon: <AutoMode />,
+  },
+  {
+    title: "Strategy Optimizer",
+    desc: "Identify best pathways.",
+    icon: <TipsAndUpdates />,
+  },
+  {
+    title: "Audit Trail",
+    desc: "Complete history of changes.",
+    icon: <VerifiedUser />,
+  },
+];
+
+export const flows = [
+  {
+    id: 0,
+    title: "Account Created",
+    navTitle: "Registration",
+    description: "Applicant registered & consented.",
+    icon: <PersonAdd />,
+  },
+  {
+    id: 1,
+    title: "Application Submitted",
+    navTitle: "Submission",
+    description: "Eligibility form submitted.",
+    icon: <AssignmentTurnedIn />,
+  },
+  {
+    id: 2,
+    title: "Application Under Review",
+    navTitle: "Review",
+    description: "Advisor reviewing eligibility.",
+    icon: <RateReview />,
+  },
+  {
+    id: 3,
+    title: "Application Accepted",
+    navTitle: "Acceptance",
+    description: "Eligible to proceed with document checks.",
+    icon: <CheckCircle />,
+  },
+  {
+    id: 4,
+    title: "Documents Requested",
+    navTitle: "Request",
+    description: "Required passport documents unlocked.",
+    icon: <LockOpen />,
+  },
+  {
+    id: 5,
+    title: "Documents Submitted",
+    navTitle: "Upload",
+    description: "Documents uploaded successfully.",
+    icon: <CloudUpload />,
+  },
+  {
+    id: 6,
+    title: "Documents Verified",
+    navTitle: "Verification",
+    description: "Case manager validating documents.",
+    icon: <Verified />,
+  },
+  {
+    id: 7,
+    title: "Assessment in Progress",
+    navTitle: "Assessment",
+    description: "Internal eligibility evaluation.",
+    icon: <Engineering />,
+  },
+  {
+    id: 8,
+    title: "Eligibility Result Ready",
+    navTitle: "Results",
+    description: "Approved eligibility summary available.",
+    icon: <Assessment />,
+  },
+  {
+    id: 9,
+    title: "Ready to Apply",
+    navTitle: "Launch",
+    description: "Final guidance before official application.",
+    icon: <RocketLaunch />,
+  },
+];
+
+export const immigrantVisas = [
+  {
+    type: "EB-1A",
+    category: "Extraordinary Ability",
+    target: "Top-tier experts in science, arts, business.",
+    req: "3 of 10 criteria showing national acclaim.",
+    self: "Yes",
+    icon: <Star />,
+  },
+  {
+    type: "EB-1B",
+    category: "Outstanding Researchers",
+    target: "Professors and researchers.",
+    req: "3 years exp; permanent job offer.",
+    self: "No",
+    icon: <Public />,
+  },
+  {
+    type: "EB-1C",
+    category: "Multinational Executives",
+    target: "Managers from foreign branches.",
+    req: "1 of last 3 years in foreign company.",
+    self: "No",
+    icon: <Groups />,
+  },
+  {
+    type: "EB-2 NIW",
+    category: "National Interest Waiver",
+    target: "Professionals with advanced degrees.",
+    req: "Endeavor must have national importance.",
+    self: "Yes",
+    icon: <VerifiedUser />,
+  },
+  {
+    type: "EB-5",
+    category: "Immigrant Investor",
+    target: "Investors with significant capital.",
+    req: "Invest $800k+; create 10 jobs.",
+    self: "Yes",
+    icon: <MonetizationOn />,
+  },
+];
+
+export const nonImmigrantVisas = [
+  {
+    type: "O-1",
+    target: "Individuals with high achievement.",
+    req: "Lower threshold than EB-1A.",
+    duration: "Renewable",
+    icon: <Star />,
+  },
+  {
+    type: "E-2",
+    target: "Treaty Investors.",
+    req: "Substantial investment in US business.",
+    duration: "Renewable",
+    icon: <MonetizationOn />,
+  },
+  {
+    type: "L-1",
+    target: "Intracompany Transfer.",
+    req: "Transfer from foreign office.",
+    duration: "Renewable",
+    icon: <Groups />,
+  },
+  {
+    type: "H-1B",
+    target: "Specialty Occupations.",
+    req: "Bachelor's degree or higher.",
+    duration: "3-6 Years",
+    icon: <Work />,
+  },
+];

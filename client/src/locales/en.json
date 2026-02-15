@@ -1,0 +1,122 @@
+{
+  "languageModal": {
+    "title": "Select Language",
+    "subtitle": "Choose your preferred language"
+  },
+  "welcome": "Welcome",
+  "about": "About",
+  "solutions": "Solutions",
+  "process": "Process",
+  "hero": {
+    "title": "The Future of",
+    "highlight": "Immigration Intelligence",
+    "subtitle": "An intelligent preparation system for high-stakes US visas. Empowering applicants with data-driven strategy and attorney-ready artifacts.",
+    "cta": "Get Started"
+  },
+  "aboutSection": {
+    "title": "Unified Orchestration Platform",
+    "card1": {
+      "title": "Attorney-Ready Output",
+      "desc": "Generate structured case summaries, criterion-to-evidence mapping, and exhibit lists automatically."
+    },
+    "card2": {
+      "title": "Readiness Evaluation",
+      "desc": "Continuous tracking of case strength and automated gap analysis for proactive preparation."
+    }
+  },
+  "visa": {
+    "title": "Visa Knowledge Base",
+    "subtitle": "Explore pathways to the United States with high-clarity intelligence.",
+    "tab1": "Immigrant",
+    "tab1sub": "(Green Card)",
+    "tab2": "Non-Immigrant",
+    "tab2sub": "(Temporary)",
+    "audience": "Target Audience",
+    "req": "Key Requirements",
+    "self": "Self-Petition",
+    "duration": "Duration"
+  },
+  "journey": {
+    "title": "Immigration Journey",
+    "subtitle": "From initial registration to final application launch.",
+    "steps": {
+      "0": {
+        "title": "Account Created",
+        "navTitle": "Registration",
+        "desc": "Applicant registered & consented."
+      },
+      "1": {
+        "title": "Application Submitted",
+        "navTitle": "Submission",
+        "desc": "Eligibility form submitted."
+      },
+      "2": {
+        "title": "Application Under Review",
+        "navTitle": "Review",
+        "desc": "Advisor reviewing eligibility."
+      },
+      "3": {
+        "title": "Application Accepted",
+        "navTitle": "Acceptance",
+        "desc": "Eligible to proceed with document checks."
+      },
+      "4": {
+        "title": "Documents Requested",
+        "navTitle": "Request",
+        "desc": "Required passport documents unlocked."
+      },
+      "5": {
+        "title": "Documents Submitted",
+        "navTitle": "Upload",
+        "desc": "Documents uploaded successfully."
+      },
+      "6": {
+        "title": "Documents Verified",
+        "navTitle": "Verification",
+        "desc": "Case manager validating documents."
+      },
+      "7": {
+        "title": "Assessment in Progress",
+        "navTitle": "Assessment",
+        "desc": "Internal eligibility evaluation."
+      },
+      "8": {
+        "title": "Eligibility Result Ready",
+        "navTitle": "Results",
+        "desc": "Approved eligibility summary available."
+      },
+      "9": {
+        "title": "Ready to Apply",
+        "navTitle": "Launch",
+        "desc": "Final guidance before official application."
+      }
+    }
+  },
+  "ctaSection": {
+    "title": "Ready to optimize your application?",
+    "subtitle": "Join the elite platform designed for high-stakes immigration orchestration and global mobility.",
+    "button": "Begin Free Evaluation"
+  },
+  "capabilities": {
+    "title": "Advanced Capabilities",
+    "subtitle": "The engine behind your extraordinary petition.",
+    "features": {
+      "0": {
+        "title": "AI Classification",
+        "desc": "Automatic document categorization."
+      },
+      "1": {
+        "title": "Strategy Optimizer",
+        "desc": "Identify best pathways."
+      },
+      "2": {
+        "title": "Audit Trail",
+        "desc": "Complete history of changes."
+      }
+    }
+  },
+  "footer": {
+    "agency": "Immigration Intelligence Agency",
+    "rights": "© 2026 IEA Platform. All rights reserved."
+  }
+}
