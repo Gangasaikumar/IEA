@@ -1,0 +1,14 @@
+{
+  "languageModal": {
+    "title": "Select Language",
+    "subtitle": "Choose your preferred language"
+  },
+  "welcome": "Welcome",
+  "about": "About",
+  "solutions": "Solutions",
+  "process": "Process",
+  "footer": {
+    "agency": "Immigration Intelligence Agency",
+    "rights": "© 2026 IEA Platform. All rights reserved."
+  }
+}

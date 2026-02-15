@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Assignment, AutoGraph } from "@mui/icons-material";
 import { containerVariants, itemVariants } from "../animations";
-import { useLanguage } from "../../../context/LanguageContext";
+import { useLanguage } from "../../../context/useLanguage";
 
 const AboutSection = () => {
   const { t } = useLanguage();

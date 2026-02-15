@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Language as LanguageIcon } from "@mui/icons-material";
 import { motion, AnimatePresence } from "framer-motion";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../context/useLanguage";
 
 const LanguageSwitcher: React.FC = () => {
   const { language, setLanguage, availableLanguages } = useLanguage();

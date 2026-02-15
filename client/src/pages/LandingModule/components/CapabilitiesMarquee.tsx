@@ -13,7 +13,7 @@ import {
   PlayArrow,
 } from "@mui/icons-material";
 import { features } from "../data/landingData";
-import { useLanguage } from "../../../context/LanguageContext";
+import { useLanguage } from "../../../context/useLanguage";
 
 // Styled Components
 const MarqueeCard = styled(motion.div)(({ theme }) => ({

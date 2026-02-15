@@ -2,8 +2,8 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { styled } from "@mui/material/styles";
 import { Close } from "@mui/icons-material";
-import { useLanguage } from "../context/LanguageContext";
-import { useTheme } from "../context/ThemeContext";
+import { useLanguage } from "../context/useLanguage";
+import { useTheme } from "../context/useTheme";
 
 const Backdrop = styled(motion.div)({
   position: "fixed",

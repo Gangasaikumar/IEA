@@ -4,7 +4,7 @@ import { styled } from "@mui/material/styles";
 import { TipsAndUpdates } from "@mui/icons-material";
 import { containerVariants, itemVariants } from "../animations";
 import { immigrantVisas, nonImmigrantVisas } from "../data/landingData";
-import { useLanguage } from "../../../context/LanguageContext";
+import { useLanguage } from "../../../context/useLanguage";
 
 // Styled Components
 const VisaTabsContainer = styled(motion.div)(({ theme }) => ({

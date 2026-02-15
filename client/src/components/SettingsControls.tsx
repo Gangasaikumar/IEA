@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useTheme } from "../context/ThemeContext";
-import { useLanguage } from "../context/LanguageContext";
+import { useTheme } from "../context/useTheme";
+import { useLanguage } from "../context/useLanguage";
 import {
   LightMode,
   DarkMode,

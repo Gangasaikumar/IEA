@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowForward } from "@mui/icons-material";
 import { useNavigate } from "react-router";
 import { containerVariants, itemVariants } from "../animations";
-import { useLanguage } from "../../../context/LanguageContext";
+import { useLanguage } from "../../../context/useLanguage";
 
 const HeroSection = () => {
   const navigate = useNavigate();

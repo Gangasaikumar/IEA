@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { RocketLaunch } from "@mui/icons-material";
 import { useNavigate } from "react-router";
-import { useLanguage } from "../../../context/LanguageContext";
+import { useLanguage } from "../../../context/useLanguage";
 
 const CallToAction = () => {
   const { t } = useLanguage();

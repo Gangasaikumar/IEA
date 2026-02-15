@@ -1,0 +1,58 @@
+{
+  "journey": {
+    "title": "Immigration Journey",
+    "subtitle": "From initial registration to final application launch.",
+    "steps": {
+      "0": {
+        "title": "Account Created",
+        "navTitle": "Registration",
+        "desc": "Applicant registered & consented."
+      },
+      "1": {
+        "title": "Application Submitted",
+        "navTitle": "Submission",
+        "desc": "Eligibility form submitted."
+      },
+      "2": {
+        "title": "Application Under Review",
+        "navTitle": "Review",
+        "desc": "Advisor reviewing eligibility."
+      },
+      "3": {
+        "title": "Application Accepted",
+        "navTitle": "Acceptance",
+        "desc": "Eligible to proceed with document checks."
+      },
+      "4": {
+        "title": "Documents Requested",
+        "navTitle": "Request",
+        "desc": "Required passport documents unlocked."
+      },
+      "5": {
+        "title": "Documents Submitted",
+        "navTitle": "Upload",
+        "desc": "Documents uploaded successfully."
+      },
+      "6": {
+        "title": "Documents Verified",
+        "navTitle": "Verification",
+        "desc": "Case manager validating documents."
+      },
+      "7": {
+        "title": "Assessment in Progress",
+        "navTitle": "Assessment",
+        "desc": "Internal eligibility evaluation."
+      },
+      "8": {
+        "title": "Eligibility Result Ready",
+        "navTitle": "Results",
+        "desc": "Approved eligibility summary available."
+      },
+      "9": {
+        "title": "Ready to Apply",
+        "navTitle": "Launch",
+        "desc": "Final guidance before official application."
+      }
+    }
+  }
+}

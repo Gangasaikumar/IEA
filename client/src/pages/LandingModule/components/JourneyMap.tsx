@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { motion } from "framer-motion";
 import { styled } from "@mui/material/styles";
 import { itemVariants } from "../animations";
 import { flows } from "../data/landingData";
-import { useLanguage } from "../../../context/LanguageContext";
+import { useLanguage } from "../../../context/useLanguage";
+import { useScrollSpy } from "../../../hooks/useScrollSpy";
 
 // Styled Components
 const SidebarContainer = styled("div")(({ theme }) => ({
@@ -47,10 +47,6 @@ const StepCard = styled(motion.div)<{ $isActive: boolean }>(
 
 const JourneyMap = () => {
   const { t } = useLanguage();
-  const [activeStep, setActiveStep] = useState<number>(0);
-  const [manualScroll, setManualScroll] = useState(false);
-  const { scrollY } = useScroll();
-
   // Create translated flows preserving icons and ids
   const translatedFlows = flows.map((flow, index) => ({
     ...flow,
@@ -59,46 +55,7 @@ const JourneyMap = () => {
     description: t(`journey.steps.${index}.desc`),
   }));
 
-  useMotionValueEvent(scrollY, "change", () => {
-    if (manualScroll) return; // Skip updates during click-driven scroll
-
-    const viewportHeight = window.innerHeight;
-    const centerPoint = viewportHeight * 0.4; // 40% from top as the "active line"
-
-    let closestStep = activeStep;
-    let minDistance = Infinity;
-
-    for (let i = 0; i < translatedFlows.length; i++) {
-      const element = document.getElementById(`step-${i}`);
-      if (element) {
-        const rect = element.getBoundingClientRect();
-        const elementCenter = rect.top + rect.height / 2;
-        const distance = Math.abs(elementCenter - centerPoint);
-
-        if (distance < minDistance) {
-          minDistance = distance;
-          closestStep = i;
-        }
-      }
-    }
-
-    if (closestStep !== activeStep) {
-      setActiveStep(closestStep);
-    }
-  });
-
-  const handleStepClick = (idx: number) => {
-    setManualScroll(true);
-    setActiveStep(idx);
-
-    const el = document.getElementById(`step-${idx}`);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "center" });
-
-      // Release lock after scroll animation (approximate duration)
-      setTimeout(() => setManualScroll(false), 700);
-    }
-  };
+  const { activeStep, scrollToStep } = useScrollSpy(translatedFlows.length);
 
   return (
     <section id="process" style={{ padding: "100px 0" }}>
@@ -152,7 +109,7 @@ const JourneyMap = () => {
                   opacity: activeStep === idx ? 1 : 0.5,
                   x: activeStep === idx ? 10 : 0,
                 }}
-                onClick={() => handleStepClick(idx)}
+                onClick={() => scrollToStep(idx)}
                 style={{
                   padding: "12px 16px",
                   borderRadius: "12px",

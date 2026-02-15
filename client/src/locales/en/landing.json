@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "title": "The Future of",
+    "highlight": "Immigration Intelligence",
+    "subtitle": "An intelligent preparation system for high-stakes US visas. Empowering applicants with data-driven strategy and attorney-ready artifacts.",
+    "cta": "Get Started"
+  },
+  "aboutSection": {
+    "title": "Unified Orchestration Platform",
+    "card1": {
+      "title": "Attorney-Ready Output",
+      "desc": "Generate structured case summaries, criterion-to-evidence mapping, and exhibit lists automatically."
+    },
+    "card2": {
+      "title": "Readiness Evaluation",
+      "desc": "Continuous tracking of case strength and automated gap analysis for proactive preparation."
+    }
+  },
+  "ctaSection": {
+    "title": "Ready to optimize your application?",
+    "subtitle": "Join the elite platform designed for high-stakes immigration orchestration and global mobility.",
+    "button": "Begin Free Evaluation"
+  },
+  "capabilities": {
+    "title": "Advanced Capabilities",
+    "subtitle": "The engine behind your extraordinary petition.",
+    "features": {
+      "0": {
+        "title": "AI Classification",
+        "desc": "Automatic document categorization."
+      },
+      "1": {
+        "title": "Strategy Optimizer",
+        "desc": "Identify best pathways."
+      },
+      "2": {
+        "title": "Audit Trail",
+        "desc": "Complete history of changes."
+      }
+    }
+  }
+}

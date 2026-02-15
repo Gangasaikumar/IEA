@@ -6,8 +6,8 @@ import {
   SettingsBrightness,
 } from "@mui/icons-material";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
-import { useTheme } from "../context/ThemeContext";
-import { useLanguage } from "../context/LanguageContext";
+import { useTheme } from "../context/useTheme";
+import { useLanguage } from "../context/useLanguage";
 
 const Navbar: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string>("");
