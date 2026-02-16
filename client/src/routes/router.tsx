@@ -1,8 +1,4 @@
-import {
-  createBrowserRouter,
-  Outlet,
-  type LoaderFunctionArgs,
-} from "react-router";
+import { createBrowserRouter, Outlet } from "react-router";
 import ClientLayout from "../layouts/ClientLayout";
 import AdvisorLayout from "../layouts/AdvisorLayout";
 import CaseManagerLayout from "../layouts/CaseManagerLayout";
@@ -32,15 +28,6 @@ const baseLevelRoutes = [
             Client Signup <Outlet />
           </div>
         ),
-        children: [
-          {
-            path: ":id",
-            loader: ({ params }: LoaderFunctionArgs) => {
-              return `Client id: ${params.id}`;
-            },
-            Component: ClientProfile,
-          },
-        ],
       },
       {
         path: routeLinks.client.login,
@@ -60,6 +47,10 @@ const clientRoutes = [
       {
         index: true,
         element: <ClientHomePage />,
+      },
+      {
+        path: routeLinks.client.profile,
+        Component: ClientProfile,
       },
     ],
   },
