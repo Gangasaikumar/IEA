@@ -10,10 +10,10 @@ const CaseManagerLayout = () => {
               <Link to="/Case-Manager">Home</Link>
             </li>
             <li>
-              <Link to="login">Case Manager Login</Link>
+              <Link to="/case-manager/login">Case Manager Login</Link>
             </li>
             <li>
-              <Link to="signup">Case Manager Signup</Link>
+              <Link to="/case-manager/signup">Case Manager Signup</Link>
             </li>
           </ul>
         </nav>

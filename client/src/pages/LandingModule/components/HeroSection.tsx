@@ -3,13 +3,14 @@ import { ArrowForward } from "@mui/icons-material";
 import { useNavigate } from "react-router";
 import { containerVariants, itemVariants } from "../animations";
 import { useLanguage } from "../../../context/useLanguage";
+import routeLinks from "../../../routes/routeLinks";
 
 const HeroSection = () => {
   const navigate = useNavigate();
   const { t } = useLanguage();
 
   const handleGetStarted = () => {
-    navigate("/client");
+    navigate(routeLinks.client.signup);
   };
 
   return (

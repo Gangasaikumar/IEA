@@ -10,10 +10,10 @@ const ClientLayout = () => {
               <Link to="/client">Home</Link>
             </li>
             <li>
-              <Link to="client-login">Client Login</Link>
+              <Link to="/client/login">Client Login</Link>
             </li>
             <li>
-              <Link to="client-signup">Client Signup</Link>
+              <Link to="/client/signup">Client Signup</Link>
             </li>
           </ul>
         </nav>

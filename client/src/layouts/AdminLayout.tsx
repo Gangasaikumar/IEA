@@ -10,13 +10,13 @@ const AdminLayout = () => {
               <Link to="/admin">Home</Link>
             </li>
             <li>
-              <Link to="login">Admin Login</Link>
+              <Link to="/admin/login">Admin Login</Link>
             </li>
             <li>
-              <Link to="signup">Admin Signup</Link>
+              <Link to="/admin/signup">Admin Signup</Link>
             </li>
             <li>
-              <Link to="dashboard">Admin Dashboard</Link>
+              <Link to="/admin/dashboard">Admin Dashboard</Link>
             </li>
           </ul>
         </nav>
