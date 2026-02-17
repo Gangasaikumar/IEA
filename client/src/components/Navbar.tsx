@@ -94,7 +94,7 @@ const Navbar: React.FC = () => {
         >
           <RocketLaunch sx={{ color: "var(--primary)", fontSize: 20 }} />
           <span className="gradient-text" style={{ fontSize: "0.95rem" }}>
-            IEA
+            IIA
           </span>
         </div>
 
