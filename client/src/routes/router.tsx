@@ -9,7 +9,7 @@ import ClientHomePage from "../pages/ClientModule/Home";
 import {
   clientProtectMiddleware,
   clientGuestMiddleware,
-} from "../middleware/authMiddleware";
+} from "../middleware/clientAuthMiddleware";
 import routeLinks from "./routeLinks";
 
 const baseLevelRoutes = [
