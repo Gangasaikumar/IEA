@@ -8,19 +8,17 @@ const clientRoutes = {
 const advisorRoutes = {
   home: "/advisor",
   login: "/advisor/login",
-  signup: "/advisor/signup",
 };
 
 const caseManagerRoutes = {
   home: "/case-manager",
   login: "/case-manager/login",
-  signup: "/case-manager/signup",
 };
 
 const adminRoutes = {
   home: "/admin",
   login: "/admin/login",
-  signup: "/admin/signup",
+  // signup: "/admin/signup",
   dashboard: "/admin/dashboard",
 };
 

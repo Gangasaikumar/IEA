@@ -38,5 +38,64 @@
         "desc": "മാറ്റങ്ങളുടെ പൂർണ്ണമായ ചരിത്രം."
       }
     }
+  },
+  "hitlSection": {
+    "badge": "കർശനമായ ഹ്യൂമൻ-ഇൻ-ദി-ലൂപ്പ് എൻഫോഴ്സ്മെന്റ്",
+    "titlePrefix": "ഹ്യൂമൻ ഇൻ ദി L",
+    "titleSubtitle": "P",
+    "workflow": "വർക്ക്ഫ്ലോ",
+    "description": "തന്ത്രം തുടങ്ങുന്നിടത്ത് ഓട്ടോമേഷൻ അവസാനിക്കുന്നു. ഏതെങ്കിലും നിയമപരമോ ക്ലയന്റ് അഭിമുഖീകരിക്കുന്നതോ ആയ നടപടികൾക്ക് മുമ്പായി നിർണ്ണായക ഘട്ടങ്ങളിൽ ഞങ്ങളുടെ പ്ലാറ്റ്‌ഫോം നിർബന്ധിത ഹ്യൂമൻ ചെക്കുകൾ നടപ്പിലാക്കുന്നു.",
+    "aiLane": "AI System Lane",
+    "humanCheckpoint": "Human Checkpoint",
+    "steps": {
+      "0": {
+        "title": "Pre-screen & Conversion",
+        "ai": "Analyzes CVs & questionnaires to identify pathway strengths.",
+        "human": "Intake Manager reviews snapshot. Explicitly decides to accept or decline."
+      },
+      "1": {
+        "title": "Evidence Ingestion",
+        "ai": "Classifies documents, extracts metadata, flags missing data.",
+        "human": "Case Manager validates extracted data and resolves flags."
+      },
+      "2": {
+        "title": "Strategy Mapping",
+        "ai": "Maps evidence to visa criteria (e.g., EB-1A prongs); scores readiness.",
+        "human": "Advisor explicitly selects criteria to pursue or reject."
+      },
+      "3": {
+        "title": "Attorney Review Prep",
+        "ai": "Compiles attorney-ready review package and exhibit list.",
+        "human": "Case Manager confirms neutrality and manually authorizes release."
+      }
+    }
+  },
+  "aiFlagsSection": {
+    "badge": "തൽക്ഷണ തയ്യാറെടുപ്പ് സ്നാപ്പ്ഷോട്ട്",
+    "title": "തൽക്ഷണ AI പ്രീ-സ്ക്രീനിംഗ്",
+    "description": "Skip the long waits. Upload your CV, LinkedIn profile, or initial documents, and our system immediately parses the data to identify your strongest immigration pathways.",
+    "features": {
+      "0": {
+        "title": "Frictionless Upload",
+        "desc": "Drop your CV or share your Google Scholar / LinkedIn link."
+      },
+      "1": {
+        "title": "AI Signal Extraction",
+        "desc": "Our engine maps your achievements to EB-1, NIW, or O-1 criteria natively."
+      },
+      "2": {
+        "title": "Mandatory Human Checkpoint",
+        "desc": "Before any decision is made, an Intake Manager reviews the AI snapshot to accept, request info, or decline."
+      }
+    },
+    "cta": "Start Your Evaluation",
+    "card": {
+      "title": "Readiness Snapshot",
+      "eb1a": "EB-1A Match",
+      "niw": "NIW Match",
+      "status": "Intake Manager Review Pending",
+      "accept": "Accept Client",
+      "decline": "Decline"
+    }
   }
 }

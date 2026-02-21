@@ -7,6 +7,8 @@ import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import VisaExplorer from "./components/VisaExplorer";
 import JourneyMap from "./components/JourneyMap";
+import HITLSection from "./components/HITLSection";
+import AIFlagsSection from "./components/AIFlagsSection";
 import CapabilitiesMarquee from "./components/CapabilitiesMarquee";
 import CallToAction from "./components/CallToAction";
 import Footer from "./components/Footer";
@@ -45,6 +47,8 @@ const Home = () => {
       <AboutSection />
       <VisaExplorer />
       <JourneyMap />
+      <HITLSection />
+      <AIFlagsSection />
       <CapabilitiesMarquee />
       <CallToAction />
       <Footer />

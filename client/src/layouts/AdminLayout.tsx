@@ -13,9 +13,6 @@ const AdminLayout = () => {
               <Link to="/admin/login">Admin Login</Link>
             </li>
             <li>
-              <Link to="/admin/signup">Admin Signup</Link>
-            </li>
-            <li>
               <Link to="/admin/dashboard">Admin Dashboard</Link>
             </li>
           </ul>

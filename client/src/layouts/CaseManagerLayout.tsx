@@ -12,9 +12,6 @@ const CaseManagerLayout = () => {
             <li>
               <Link to="/case-manager/login">Case Manager Login</Link>
             </li>
-            <li>
-              <Link to="/case-manager/signup">Case Manager Signup</Link>
-            </li>
           </ul>
         </nav>
       </header>

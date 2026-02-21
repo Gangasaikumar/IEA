@@ -13,9 +13,6 @@ const AdvisorLayout = () => {
               <Link to="/advisor/login">Advisor Login</Link>
             </li>
             <li>
-              <Link to="/advisor/signup">Advisor Signup</Link>
-            </li>
-            <li>
               <Link to="/advisor/dashboard">Advisor Dashboard</Link>
             </li>
           </ul>

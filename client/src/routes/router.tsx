@@ -11,6 +11,18 @@ import {
   clientGuestMiddleware,
 } from "../middleware/clientAuthMiddleware";
 import routeLinks from "./routeLinks";
+import {
+  advisorGuestMiddleware,
+  advisorProtectMiddleware,
+} from "../middleware/advisorAuthMiddleware";
+import {
+  caseManagerGuestMiddleware,
+  caseManagerProtectMiddleware,
+} from "../middleware/caseManagerAuthMiddleware";
+import {
+  adminGuestMiddleware,
+  adminProtectMiddleware,
+} from "../middleware/adminAuthMiddleware";
 
 const baseLevelRoutes = [
   {
@@ -34,6 +46,26 @@ const baseLevelRoutes = [
         middleware: [clientGuestMiddleware],
         element: <div>Client Login</div>,
       },
+      {
+        path: routeLinks.advisor.login,
+        middleware: [advisorGuestMiddleware],
+        element: <div>Advisor Login</div>,
+      },
+      {
+        path: routeLinks.caseManager.login,
+        middleware: [caseManagerGuestMiddleware],
+        element: <div>Case Manager Login</div>,
+      },
+      {
+        path: routeLinks.admin.login,
+        middleware: [adminGuestMiddleware],
+        element: <div>Admin Login</div>,
+      },
+      // {
+      //   path: routeLinks.admin.signup,
+      //   middleware: [adminGuestMiddleware],
+      //   element: <div>Admin Signup</div>,
+      // },
     ],
   },
 ];
@@ -59,19 +91,12 @@ const clientRoutes = [
 const advisorRoutes = [
   {
     path: routeLinks.advisor.home,
+    middleware: [advisorProtectMiddleware],
     element: <AdvisorLayout />,
     children: [
       {
         index: true,
         element: <div>Advisor</div>,
-      },
-      {
-        path: routeLinks.advisor.login,
-        element: <div>Advisor Login</div>,
-      },
-      {
-        path: routeLinks.advisor.signup,
-        element: <div>Advisor Signup</div>,
       },
       {
         path: "dashboard",
@@ -84,19 +109,12 @@ const advisorRoutes = [
 const caseManagerRoutes = [
   {
     path: routeLinks.caseManager.home,
+    middleware: [caseManagerProtectMiddleware],
     element: <CaseManagerLayout />,
     children: [
       {
         index: true,
         element: <div>Case Manager</div>,
-      },
-      {
-        path: routeLinks.caseManager.login,
-        element: <div>Case Manager Login</div>,
-      },
-      {
-        path: routeLinks.caseManager.signup,
-        element: <div>Case Manager Signup</div>,
       },
     ],
   },
@@ -105,19 +123,12 @@ const caseManagerRoutes = [
 const adminRoutes = [
   {
     path: routeLinks.admin.home,
+    middleware: [adminProtectMiddleware],
     element: <AdminLayout />,
     children: [
       {
         index: true,
         element: <div>Admin</div>,
-      },
-      {
-        path: routeLinks.admin.login,
-        element: <div>Admin Login</div>,
-      },
-      {
-        path: routeLinks.admin.signup,
-        element: <div>Admin Signup</div>,
       },
       {
         path: routeLinks.admin.dashboard,
@@ -134,6 +145,10 @@ const router = createBrowserRouter(
     ...advisorRoutes,
     ...caseManagerRoutes,
     ...adminRoutes,
+    {
+      path: "*",
+      element: <div>404</div>,
+    },
   ],
   {
     future: {
