@@ -13,10 +13,11 @@ const Container = styled("div")({
 const Track = styled("div")({
   height: "10px",
   width: "100%",
-  background: "rgba(0, 0, 0, 0.2)",
+  background: "var(--bg-dark)",
   borderRadius: "8px",
   position: "relative",
   overflow: "hidden",
+  border: "1px solid var(--border-color)",
 });
 
 const Bar = styled("div")<{ progress: number; color: string }>(

@@ -106,8 +106,8 @@ export const LaneCard = styled(motion.div)<{ type: "ai" | "human" }>(
     position: "relative",
     ...(type === "ai"
       ? {
-          background: "rgba(15, 23, 42, 0.4)",
-          border: "1px solid rgba(255, 255, 255, 0.08)",
+          background: "var(--glass-bg)",
+          border: "1px solid var(--border-color)",
           boxShadow: "inset 0 1px 1px rgba(255, 255, 255, 0.05)",
         }
       : {
@@ -115,7 +115,7 @@ export const LaneCard = styled(motion.div)<{ type: "ai" | "human" }>(
           backdropFilter: "blur(8px)",
           border: "1px solid rgba(16, 185, 129, 0.2)",
           boxShadow:
-            "0 8px 32px rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(16, 185, 129, 0.1)",
+            "0 8px 32px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(16, 185, 129, 0.1)",
         }),
     "& h4": {
       fontSize: "0.75rem",

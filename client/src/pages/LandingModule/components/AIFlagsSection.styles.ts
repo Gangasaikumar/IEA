@@ -32,8 +32,8 @@ export const FeatureItem = styled("div")({
     width: "48px",
     height: "48px",
     borderRadius: "12px",
-    background: "rgba(255, 255, 255, 0.03)",
-    border: "1px solid rgba(255, 255, 255, 0.08)",
+    background: "var(--glass-bg)",
+    border: "1px solid var(--border-color)",
     color: "var(--primary)",
     display: "flex",
     alignItems: "center",
@@ -54,12 +54,12 @@ export const FeatureItem = styled("div")({
 });
 
 export const SnapshotCard = styled(motion.div)({
-  background: "rgba(15, 23, 42, 0.6)",
+  background: "var(--glass-bg)",
   backdropFilter: "blur(20px)",
-  border: "1px solid rgba(255, 255, 255, 0.08)",
+  border: "1px solid var(--border-color)",
   borderRadius: "24px",
   padding: "40px",
-  boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)",
+  boxShadow: "var(--glass-shadow)",
   position: "relative",
   "&::before": {
     content: '""',
@@ -69,7 +69,7 @@ export const SnapshotCard = styled(motion.div)({
     right: "0",
     height: "1px",
     background:
-      "linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent)",
+      "linear-gradient(90deg, transparent, var(--border-color), transparent)",
   },
 });
 
@@ -103,8 +103,8 @@ export const ActionButton = styled(motion.button)<{
         boxShadow: "0 10px 20px rgba(16, 185, 129, 0.2)",
       }
     : {
-        background: "rgba(255, 255, 255, 0.05)",
-        color: "var(--text-muted)",
-        border: "1px solid rgba(255, 255, 255, 0.1)",
+        background: "var(--bg-dark)",
+        color: "var(--text-main)",
+        border: "1px solid var(--border-color)",
       }),
 }));
